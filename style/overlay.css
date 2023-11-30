@@ -1,0 +1,69 @@
+.modal{
+    position:fixed;
+    top:20%;
+    left: 5%;
+    width:90%;
+    background-color: rgb(247, 239,247) ;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0,0,0.5);
+    padding:1rem;
+   display: none;
+}
+#backdrop{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: none;
+    background-color: rgba(0, 0,0,0.5);
+}
+#game-configuration{
+    width:90%;
+    max-width: 40rem;
+    text-align: center;
+    margin:4rem auto;
+}
+#game-configuration ol{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    display: flex;
+}
+#game-configuration ol li{
+    width:50%;
+    padding:1rem;
+    margin:1rem;
+    background-color:rgb(243,227, 255);   
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0,0,0.5);
+}
+#game-configuration h2 {
+    font-size: 1rem;
+    margin:0.5rem 0;
+}
+
+#game-configuration h3 {
+     font-size: 1.5rem;
+     margin:0.5rem 0;
+    color:rgb(94,4, 168);
+}
+.player-symbol{
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(47,4, 82);
+    margin:0.5rem 0;
+}
+.player-score{
+    font-size: 2rem;
+    font-weight: bold;
+    color:rgb(47,4, 82);
+    margin:0.5rem 0;
+}
+
+@media (min-width:48rem){
+    .modal{
+        width:40rem;
+        left:calc(50% - 20rem);
+    }
+}
